@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <span id="songName"></span>
+    </body>
+    <script>
+        const webHostname = document.location.host;
+
+        function setSongName() {
+            var request = new XMLHttpRequest();
+            const url = `http://${webHostname}/getMeta?data=song`;
+
+            request.open("GET", url);
+            request.send();
+
+            request.onreadystatechange = (e) => {
+                console.log(request.responseText);
+                document.getElementById("songName").innerHTML = request.responseText;
+            }
+        }
+
+        setInterval(setSongName, 2000);
+    </script>
+</html>
