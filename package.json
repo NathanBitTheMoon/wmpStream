@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/NathanBitTheMoon/wpmJsStream/issues"
   },
-  "homepage": "https://github.com/NathanBitTheMoon/wpmJsStream#readme"
+  "homepage": "https://github.com/NathanBitTheMoon/wpmJsStream#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
