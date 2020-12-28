@@ -1,0 +1,25 @@
+{
+  "name": "wmpstream",
+  "version": "1.0.0",
+  "description": "A node.js express server for streaming WPM information over a web server for OBS layouts",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathanBitTheMoon/wpmJsStream.git"
+  },
+  "keywords": [
+    "obs",
+    "wpm",
+    "express",
+    "music"
+  ],
+  "author": "NathanBitTheMoon (nbtm)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NathanBitTheMoon/wpmJsStream/issues"
+  },
+  "homepage": "https://github.com/NathanBitTheMoon/wpmJsStream#readme"
+}
