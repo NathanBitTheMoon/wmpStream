@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/NathanBitTheMoon/wpmJsStream#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "wpm": "^0.1.0"
+    "express": "^4.17.1"
   }
 }
