@@ -19,8 +19,8 @@ server.get('/', (req, res) => {
     // Browser plugin/application will make requests to the node server to report the information
     // Stores the information in variables to be served to a client later.
     if (req.query.song != undefined) { currentSong = req.query.song; }
-    if (req.query.artist != undefined) { currentArtist = req.query.song; }
-    if (req.query.currentAlbum != undefined) { currentAlbum = req.query.song; }
+    if (req.query.artist != undefined) { currentArtist = req.query.artist; }
+    if (req.query.album != undefined) { currentAlbum = req.query.album; }
 });
 
 server.get('/song', (req, res) => {
@@ -28,6 +28,14 @@ server.get('/song', (req, res) => {
     // File's JS will query the server every 1000ms, getting the previously stored information.
     // This is done so that the page can just be added as a browser source in OBS and will automatically refresh
     res.sendFile(__dirname +  '/html/song.html');
+});
+
+server.get('/artist', (req, res) => {
+    res.sendFile(__dirname +  '/html/artist.html');
+});
+
+server.get('/album', (req, res) => {
+    res.sendFile(__dirname +  '/html/album.html');
 });
 
 server.get('/getMeta', (req, res) => {
