@@ -12,14 +12,14 @@
   "content_scripts": [
     {
       "matches": ["*://*.youtube.com/*"],
-      "js": ["index.js"]
+      "js": ["main.js"]
     }
   ],
 
   "permissions": [
-    "*://*.youtube.com/*",
+    "*://127.0.0.1:3621/*",
+    "*://localhost:3621/*",
     "webRequest",
-    "tabs",
     "activeTab"
   ]
 
