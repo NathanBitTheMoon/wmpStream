@@ -13,14 +13,15 @@ var currentAlbum = "";
 server.use(express.static("./html/"));
 
 server.get('/', (req, res) => {
-    res.json({"nbtm": true});
-
     // Set currently playing song info
     // Browser plugin/application will make requests to the node server to report the information
     // Stores the information in variables to be served to a client later.
-    if (req.query.song != undefined) { currentSong = req.query.song; }
-    if (req.query.artist != undefined) { currentArtist = req.query.artist; }
-    if (req.query.album != undefined) { currentAlbum = req.query.album; }
+    if (req.query.song != undefined) { currentSong = req.query.song; console.log("Song set: " + req.query.song ); }
+    if (req.query.artist != undefined) { currentArtist = req.query.artist; console.log("Artist set: " + req.query.artist ); }
+    if (req.query.album != undefined) { currentAlbum = req.query.album; console.log("Album set: " + req.query.album ); }
+
+    res.set("Access-Control-Allow-Origin", "*");
+    res.send();
 });
 
 server.get('/song', (req, res) => {
