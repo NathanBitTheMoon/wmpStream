@@ -1,9 +1,9 @@
 function title() {
-    return document.getElementsByClassName("ytd-video-primary-info-renderer")[6].innerHTML;
+    return encodeURIComponent(document.getElementsByClassName("ytd-video-primary-info-renderer")[6].innerHTML);
 }
 
 function channel() {
-    return document.getElementsByClassName("ytd-video-secondary-info-renderer")[0].getElementsByClassName("yt-formatted-string")[0].innerHTML;
+    return encodeURIComponent(document.getElementsByClassName("ytd-video-secondary-info-renderer")[0].getElementsByClassName("yt-formatted-string")[0].innerHTML);
 }
 
 function communicateInfo() {
