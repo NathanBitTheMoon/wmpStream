@@ -1,0 +1,1 @@
+setInterval(function(){var e=document.getElementsByClassName("ytd-video-primary-info-renderer")[6].innerHTML,t=document.getElementsByClassName("style-scope yt-formatted-string")[27].innerHTML,n=new XMLHttpRequest;n.open("GET",`http://localhost:3621/?song=${e}&artist=${t}`),n.send()},5e3);
