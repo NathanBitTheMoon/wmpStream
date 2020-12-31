@@ -3,7 +3,7 @@ function title() {
 }
 
 function channel() {
-    return document.getElementsByClassName("style-scope yt-formatted-string")[27].innerHTML;
+    return document.getElementsByClassName("ytd-video-secondary-info-renderer")[0].getElementsByClassName("yt-formatted-string")[0].innerHTML;
 }
 
 function communicateInfo() {
